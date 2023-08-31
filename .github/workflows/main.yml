@@ -22,5 +22,6 @@ jobs:
                   pip install pytest-playwright
                   playwright install chromium
                   pipenv install allure-pytest
+              continue-on-error: true
             - name: Run tests
               run: pytest
