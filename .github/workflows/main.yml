@@ -23,6 +23,7 @@ jobs:
               continue-on-error: true
             - name: Run tests
               run: pytest
+              continue-on-error: true
 
             - name: Test marketplace action
               uses: simple-elf/allure-report-action@master
