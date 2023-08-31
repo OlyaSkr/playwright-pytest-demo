@@ -19,6 +19,7 @@ jobs:
                   pip install pytest-playwright
                   pip install exceptiongroup
                   playwright install chromium
+                  pip install allure-pytest
               continue-on-error: true
             - name: Run tests
               run: pytest
