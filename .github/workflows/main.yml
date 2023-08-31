@@ -22,7 +22,7 @@ jobs:
                   pip install allure-pytest
               continue-on-error: true
             - name: Run tests
-              run: pytest
+              run: pytest --alluredir=./reports --clean-alluredir
               continue-on-error: true        
             - name: Allure Report action from marketplace
               uses: simple-elf/allure-report-action@master
